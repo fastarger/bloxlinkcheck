@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar link de Servidor Privado</title>
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
+    <script src="https://kit.fontawesome.com/9eaf6a8b50.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+            <img style="width: 250px; height: auto;" src="assets/imagens/bloxlinkcheck.png" alt="Logo">
+        </label>
+
+        <ul>
+            <li><a class="active" href="#"><i class="fa-solid fa-house"></i> Início</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i> Sobre</a></li>
+            <li><a href="#"><i class="fa-solid fa-user-tie"></i> Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p id="infoDiv">Para verificar se o link que te enviaram é OFICIAL ou FALSO, copie e cole
+            abaixo.</p>
+        <h2>Cole o link abaixo</h2>
+        <div id="linkContainer">
+            <input id="linkInput" type="text" placeholder="🔍 Copie e cole o link aqui..." />
+            <button id="verifyButton" onclick="verificarLink()"><i class="fas fa-search"></i> Verificar</button>
+        </div>
+        <div id="resultDiv"></div><br>
+        <div class="container">
+            <h2>Como são os Links oficiais?</h2>
+
+            <p class="linkoficial"><i class="fa-solid fa-circle-check"></i> <strong>Oficial:</strong>
+                https://www.<strong>roblox.com</strong>/share?code=</p>
+            <p class="linkoficial"><i class="fa-solid fa-circle-check"></i> <strong>Oficial:</strong>
+                https://www.<strong>roblox.com</strong>/games/</p>
+            <br>
+            <h2>Como são os Links falsos?</h2>
+
+            <p class="linkunnoficial"><i class="fa-solid fa-triangle-exclamation"></i> <strong>Falso:</strong>
+                https://www.<strong>roblox.com.ms</strong>/share?code=</p>
+            <p class="linkunnoficial"><i class="fa-solid fa-triangle-exclamation"></i> <strong>Falso:</strong>
+                https://<strong>www-roblox.com</strong>/games/</p>
+        </div>
+    </main>
+    <footer>
+        <p>Estudando essas tecnologias:</p>
+        <a href="https://developer.mozilla.org/pt-BR/docs/learn/getting_started_with_the_web/html_basics"
+            target="_blank"><i class="fa-brands fa-html5"></i></a> <i class="fa-solid fa-angle-right"></i> <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><i
+                class="fa-brands fa-css3-alt"></i></a> <i class="fa-solid fa-angle-right"></i> <a
+            href="https://developer.mozilla.org/pt-BR/docs/web/javascript/guide/introduction" target="_blank"><i
+                class="fa-brands fa-square-js"></i></a>
+    </footer>
+
+</body>
+
+</html>

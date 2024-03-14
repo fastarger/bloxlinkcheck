@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: "Secular One", sans-serif;
+}
+
+nav {
+    background-color: #0062c4;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    margin: 20px;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    z-index: 1; /* Adicione esta linha */
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #0097ff;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-nav>li>a {
+    text-decoration: none;
+}
+
+#check {
+    display: none;
+}
+
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0062c4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #00aaff;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+#linkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adiciona o alinhamento horizontal central */
+    margin-bottom: 10px;
+}
+
+
+#linkInput {
+    width: 600px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 3px solid #0097ff;
+    /* Adiciona a cor azul à borda */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    /* Remove a borda padrão de foco do navegador */
+}
+
+@media (max-width: 767px) {
+
+    /* Estilos específicos para dispositivos móveis com largura de tela até 767 pixels */
+    #linkInput {
+        padding: 15px;
+        margin-left: 20px;
+        /* Reduz o padding para dispositivos móveis */
+    }
+}
+
+#linkInput:focus {
+    border: 3px solid #0097ff;
+    background-color: rgb(253, 247, 247);
+}
+
+#infoDiv {
+    background-color: #0097ff;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 16px;
+}
+
+#div2 {
+    background-color: #0097ff;
+    color: white;
+    padding: 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#verifyButton {
+    padding: 18px;
+    background-color: #0097ff;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Adiciona um efeito de transição na cor de fundo */
+}
+
+@media (max-width: 767px) {
+
+    /* Estilos específicos para dispositivos móveis com largura de tela até 767 pixels */
+    #verifyButton {
+        padding: 8px;
+        margin-right: 20px;
+        /* Reduz o padding para dispositivos móveis */
+    }
+}
+
+#verifyButton:hover {
+    background-color: #0097ff;
+    /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+
+
+#resultDiv {
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+}
+
+.result-appear {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.official {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.unofficial {
+    background-color: #ff6961;
+    color: white;
+}
+
+.linkoficial {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 600px;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.linkunnoficial {
+    background-color: #f93535;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 600px;
+    align-items: center;
+    margin: 10px auto;
+
+}
+
+@media screen and (max-width: 750px) {
+    .linkunnoficial {
+        width: auto;
+    }
+
+    .linkoficial {
+        width: auto;
+    }
+
+    #infoDiv {
+        width: auto;
+        margin: 2em;
+    }
+
+}
+
+.container {
+    text-align: left;
+    background-color: #efeeee;
+    color: black;
+    padding: 20px;
+    width: 100%;
+}
+
+#informativo {
+    text-align: center;
+}
+
+.fa-triangle-exclamation {
+    color: yellow;
+}
+
+.fa-circle-check {
+    color: rgb(0, 116, 0);
+}
+
+footer {
+    background-image: linear-gradient(to top, #0059ff, #0062c4);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 180px;
+}
+
+footer i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
