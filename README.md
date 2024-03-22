@@ -1,5 +1,7 @@
 # BloxLink🔗Check
 
+![]([URL_da_Imagem](https://raw.githubusercontent.com/fastarger/bloxlinkcheck/main/assets/imagens/captura.png))
+
 Este é um projeto básico feito em Html, Css e Javascript.
 
 Consiste em verificar se o link de um servidor privado do roblox é oficial ou falso.
