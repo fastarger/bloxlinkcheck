@@ -1,6 +1,6 @@
 # BloxLink🔗Check
 
-![]([URL_da_Imagem](https://raw.githubusercontent.com/fastarger/bloxlinkcheck/main/assets/imagens/captura.png))
+![img](https://raw.githubusercontent.com/fastarger/bloxlinkcheck/main/assets/imagens/captura.png)
 
 Este é um projeto básico feito em Html, Css e Javascript.
 
